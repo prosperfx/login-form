@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * , *::before , ::after
+        {
+            box-sizing: border-box;
+        }
+        body
+        {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f9f9f9;
+        }
+        .container
+        {
+            width: 80vw;
+            display: flex;
+            max-height: 80vh;
+            align-items: center;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0px 0px 8px 2px rgba(200, 200, 200, 0.25);
+
+        }
+        .left
+        {
+            color: white;
+            border-top-left-radius: inherit;
+            border-bottom-left-radius: inherit;
+            padding: 50px 60px;
+            background-color: black;            
+        }
+        .container > div
+        {
+            flex-basis: 50%;
+            min-height: 400px;
+        }
+        .left > h2
+        {
+            font-size: 4em;
+            margin: 0;
+        }
+        .left > p
+        {
+            margin: 0;
+            font-size: 2em;
+            padding: 20px 0;
+        }
+        .left > a
+        {
+            margin-right: 20px;
+            border-radius: 12px;
+            padding: 10px 50px;
+            color: rgb(241, 236, 236);
+            transition: 0.2s;
+            text-decoration: none;
+            background-color: #f7740a;
+        }
+        .left > :nth-child(4) 
+        {
+            background-color:#fff;
+            color: #000;
+        }
+        .left > :nth-child(4):hover
+        {
+            background-color: inherit;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+        .left > :nth-child(3):hover
+        {
+            background-color: inherit;
+            border: 1px solid #f7740a;
+            color: #fff;
+        }
+        .right
+        {
+            padding: 30px 40px ;
+        }
+        .right >.input-field > input[type="text"] ,
+        .right >.input-field > input[type="password"]
+        {
+           width: 100%; 
+           height: 50px;
+           border-radius: 9px;
+           border: 1px solid black;
+           outline: none;
+           color: black;
+           padding: 0 10px;
+        }
+        .right > input[type="submit"]
+        {
+            margin-top: 20px;
+            padding: 15px 100px;
+            border: none;
+            color: #fff;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.2s;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1em;
+            background-color: rgb(0, 0, 0);
+        }
+        .right >.input-field > input[type="text"]:focus,
+        .right >.input-field > input[type="password"]:focus
+        {
+        border: 1px solid black;
+        }
+        .right >.input-field > input[type="text"]::placeholder,
+        .right >.input-field > input[type="password"]::placeholder
+        {
+            color: black;
+        }
+        .right > p > a
+        {
+            color: #000;
+        } 
+        .right > input[type="submit"]:hover
+        {
+            background-color:#f7740a;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left">
+                <h2>Hello,</h2>
+                <p>Welcome back</p>
+                <a href="">Login</a> <a href="index.html">Sign up</a>
+            </div>
+            <div class="right">
+                <div class="input-field">
+                    <p>Username</p>
+                    <input type="text" name="Fname" placeholder="Enter Your Username here">
+                </div>
+                <div class="input-field">
+                    <p>Password</p>
+                    <input type="password" name="Password" placeholder="Enter Your Password">
+                </div>
+                <p><a href="#">Forgot Password</a></p>
+                <input type="submit" value="login">
+            </div>
+        </div>
+    </body>
+</html>
